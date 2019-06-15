@@ -1,6 +1,6 @@
 h1 {
-    font-size: 120px;
-    color: #263a48;
+    font-size: 100px;
+    color: #fff;
     font-weight: bold;
     line-height: 1;
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
@@ -12,7 +12,7 @@ h1 {
 
 p {
     font-size: 32px;
-    color: #263a48;
+    color: #b3d7ff;
 
 }
 
@@ -49,10 +49,17 @@ h2 {
     font-weight: bold;
 }
 
+.box-contact p{
+    font-size: 16px;
+}
 
-
-
-
+.box-contact span{
+    font-weight: bold;
+    color: white;
+}
+.box-contact span img{
+    margin-right: 8px;
+}
 
 
 
@@ -85,3 +92,32 @@ h2 {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+.box-intro button{
+    background: transparent;
+    border: 0
+}
+.modal-dialog {
+    max-width: 1149px;
+    margin: 1.75rem auto;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+.bg-dark{
+    background: transparent !important;
+}
+.bg-dark.scrolled {
+    background: #2470a1 !important;
+    padding: 20px;
+    border-radius: 20px;
+}
+

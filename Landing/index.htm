@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
 
     <title>WEBXY</title>
 </head>
@@ -31,7 +32,7 @@
         }
 
         body {
-            height: 1200px;
+            height: 4200px;
         }
     </style>
 
@@ -39,7 +40,7 @@
 
     <!--MENU WEBXY WITH INTRO SECTION-->
     <section class="intro-section" id="intro-section">
-        <nav class="navbar   container sticky-top ">
+        <nav class="navbar bg-dark  fixed-top  container">
             <a class="navbar-brand" href="#"><img src="img/LOGO.png" alt="" width="70%"></a>
             <!--<img src="img/SEARCH.png" alt="" width="40px">-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,13 +82,37 @@
         <div class="box-intro text-center">
             <h1>WEBXY</h1>
             <p>YOU THINK WE DEVELOP.</p>
-            <h2>WEBDESIGN , WEBDEVELOPING , WEBHOSTING , DIGITAL MARKETING</h2>
-            <img src="img/play.png" alt="" style="margin-top: 30px">
-            <div class="row">
-                <div class="col-lg-3">1</div>
-                <div class="col-lg-3">2</div>
-                <div class="col-lg-3">3</div>
-                <div class="col-lg-3">4</div>
+            <h2 style="margin-top: 50px; letter-spacing: 3px;">WEBDESIGN , WEBDEVELOPING , WEBHOSTING , DIGITAL MARKETING</h2>
+            
+            <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter">
+            <img src="img/play.png" alt="" style="margin-top: 50px">
+</button>
+            
+            <div class="row" style="margin-top: 100px">
+                <div class="col-lg-3">
+                <div class="box-contact">
+                    <span><img src="img/ic_email_24px.png" alt=""></span><span>mailbox</span>
+                    <p>info@webxy.net</p>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div class="box-contact">
+                    <span><img src="img/ic_forum_24px.png" alt=""></span><span>Live Chat</span>
+                    <p>Start Now</p>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div class="box-contact">
+                    <span><img src="img/ic_phone_in_talk_24px.png" alt=""></span><span>Phone</span>
+                    <p>+(2) 0122200020</p>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div class="box-contact">
+                    <span><img src="img/ic_group_24px.png" alt=""></span><span>Request Consultation</span>
+                    <p>Fill Form Now</p>
+                </div>
+                </div>
             </div>
         </div>
         <!--CENTER BOX WEBXY -->
@@ -105,15 +130,36 @@
 
 
 
+<!--Modal Play Video-->
+<!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="modal-body">
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/F4fbwKV9dBU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
-
-
+    </div>
+  </div>
+</div>
+<!--Modal Play Video-->
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+ $(window).scroll(function(){
+ $('nav').toggleClass('scrolled', $(this).scrollTop() > 890);
+ });
+</script>
 </body></html>
